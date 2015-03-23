@@ -160,6 +160,8 @@ exec --no-startup-id owncloud
 
 # Start Skype
 exec --no-startup-id skype
+# set skype window to always float
+for_window [class="Skype" instance="skype"] floating enable
 
 #
 # 
