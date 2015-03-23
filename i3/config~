@@ -163,12 +163,6 @@ exec --no-startup-id skype
 # set skype window to always float
 for_window [class="Skype" instance="skype"] floating enable
 
-# Start blueman applet
-exec --no-startup-id blueman-applet
-
-# Start unity-settings-daemon
-exec --no-startup-id unity-settings-daemon
-
 #
 # 
 # CUSTOM KEYBINDINGS
