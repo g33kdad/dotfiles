@@ -127,6 +127,7 @@ mode "resize" {
 
         # Pressing left will shrink the window’s width.
         # Pressing right will grow the window’s width.
+        
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
         bindsym j resize shrink width 10 px or 10 ppt
@@ -147,14 +148,33 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+#
+#
+# STARTUP APPLICATIONS
+
 # Start nm-applet
-# exec --no-startup nm-applet
+exec --no-startup-id nm-applet
 
 # Start ownCloud sync
 exec --no-startup-id owncloud
 
 # Start Skype
-exec skype
+exec --no-startup-id skype
+
+#
+# 
+# CUSTOM KEYBINDINGS
+ 
+bindsym $mod+b exec --no-startup-id chromium-browser
+bindsym $mod+Mod1+l exec "i3lock -d"
+
+# Volume Control
+bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume 0 -- '-5%'
+bindsym XF86AudioRaiseVolume exec /usr/bin/pactl set-sink-volume 0 -- '+5%'
+
+# Brightness Control
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
