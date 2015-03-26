@@ -109,4 +109,5 @@ endif
 
 " always show airline
 	set laststatus=2
-
+" always show line numbers
+	set number
