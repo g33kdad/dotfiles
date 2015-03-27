@@ -148,6 +148,9 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Force KeePass2 to float
+for_window [class="KeePass2" instance="keepass2"] floating enable
+
 #
 #
 # STARTUP APPLICATIONS
@@ -168,6 +171,10 @@ exec --no-startup-id blueman-applet
 
 # Start unity-settings-daemon
 exec --no-startup-id unity-settings-daemon
+
+#
+#
+# CUSTOM WORKSPACE ACTIONS
 
 #
 # 
