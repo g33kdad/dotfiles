@@ -112,3 +112,6 @@ endif
 
 " always show line numbers
 	set number
+
+" spell while you type
+" 	set spell spelllang=en_us
