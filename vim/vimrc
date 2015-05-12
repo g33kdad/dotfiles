@@ -114,4 +114,4 @@ endif
 	set number
 
 " spell while you type
-" 	set spell spelllang=en_us
+ 	set spell spelllang=en_us
