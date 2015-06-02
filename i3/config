@@ -185,7 +185,7 @@ exec --no-startup-id gnome-settings-daemon
 # 
 # CUSTOM KEYBINDINGS
  
-bindsym $mod+b exec --no-startup-id chromium-browser
+bindsym $mod+b exec --no-startup-id google-chrome-stable
 bindsym $mod+Mod1+l exec "i3lock -d"
 
 # Volume Control
