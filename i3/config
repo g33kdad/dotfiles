@@ -187,6 +187,7 @@ exec --no-startup-id gnome-settings-daemon
  
 bindsym $mod+b exec --no-startup-id google-chrome-stable
 bindsym $mod+Mod1+l exec "i3lock -d"
+bindsym $mod+Mod1+w exec "feh --randomize --bg-fill ~/Pictures/wallpapers/backgrounds/*"
 
 # Volume Control
 bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume 0 -- '-5%'
