@@ -115,3 +115,6 @@ endif
 
 " spell while you type
  	set spell spelllang=en_us
+
+" line break at 80 char
+	set tw=80
