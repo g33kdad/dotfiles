@@ -1,0 +1,5 @@
+feh --bg-scale --randomize ~/Pictures/walls/*
+(sleep 2s && tint2 &)
+compton &
+synclient touchpadoff=0
+
