@@ -45,16 +45,6 @@
 
 
 " launch config {{{
-	call pathogen#infect()   "use pathogen
+"	call pathogen#infect()   "use pathogen
 	set nocompatible
-
-" }}}
-
-" Pencil plugin {{{
-    let g:pencil#wrapModeDefault = 'soft'   " default is 'hard'
-    augroup pencil
-        autocmd!
-        autocmd FileType markdown,mkd,md call pencil#init()
-        autocmd FileType text         call pencil#init()
-    augroup END
 " }}}
