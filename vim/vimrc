@@ -1,14 +1,19 @@
 " Matty .vimrc
 
+" launch config {{{
+    call pathogen#infect()   "use pathogen
+	set nocompatible
+" }}}
 
 " colors {{{
 	syntax enable		"allow syntax highlighting
 	colorscheme desert	" set interface colorscheme
+"    colorscheme solarized
 " }}}
 
 " misc {{{
 	set ttyfast         "speeds scrolling
-    set lines=40 columns=140    "sets window size
+    set lines=32 columns=120    "sets window size
     set laststatus=2    "displays airline.vim persistantly
 "    set spell spelllang=en_us   "check spelling while you type
     set tw=80
@@ -41,10 +46,4 @@
 	"turn off search highlighting
 	nnoremap <leader><space> :nohlsearch<CR>
 	
-" }}}
-
-
-" launch config {{{
-"	call pathogen#infect()   "use pathogen
-	set nocompatible
 " }}}

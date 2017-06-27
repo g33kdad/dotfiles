@@ -1,4 +1,4 @@
-alias home_proxy='ssh -D localhost:8080 mmc@g33kdad.mooo.com -p 2222' 
+alias home_proxy='ssh -D localhost:8080 root@cloud.thestrangeland.net' 
 alias ll='ls -la'
 alias svim='sudo vim'
 alias reddit='rtv'
